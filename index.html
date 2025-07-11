@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI vs GitHub Copilot 비교 (2025년 7월 기준)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1><i class="fas fa-code"></i> Cursor AI vs GitHub Copilot</h1>
+                <p class="subtitle">2025년 7월 기준 비교 분석</p>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- 기본 개발 정보 요약 -->
+            <section class="section">
+                <h2><i class="fas fa-info-circle"></i> 기본 개발 정보 요약</h2>
+                <div class="comparison-table">
+                    <div class="table-header">
+                        <div class="header-cell">항목</div>
+                        <div class="header-cell cursor">Cursor AI</div>
+                        <div class="header-cell copilot">GitHub Copilot</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="cell">정체성</div>
+                        <div class="cell cursor">자체 VS Code 기반 AI IDE</div>
+                        <div class="cell copilot">기존 IDE에 붙는 AI 어시스턴트</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="cell">기본 모델</div>
+                        <div class="cell cursor">GPT-4o, Claude 3.5 Sonnet 등 선택 가능</div>
+                        <div class="cell copilot">GPT-4o, Claude 3.5 Sonnet 등 (주로 GPT-4o)</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="cell">주요 기능</div>
+                        <div class="cell cursor">전체 파일 수정, 리팩토링, 대화형 명령</div>
+                        <div class="cell copilot">코드 자동완성, Copilot Chat, 리팩토링 보조</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 요금제 비교 -->
+            <section class="section">
+                <h2><i class="fas fa-credit-card"></i> 요금제 비교 (2025년 7월 기준)</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="plan-name">무료</div>
+                        <div class="plan-details">
+                            <div class="cursor-plan">
+                                <h4>Cursor AI</h4>
+                                <p>Hobby – 월 2,000개 자동완성, 느린 요청 50개</p>
+                            </div>
+                            <div class="copilot-plan">
+                                <h4>GitHub Copilot</h4>
+                                <p>Free – 유사한 제한</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="plan-name">개인 Pro</div>
+                        <div class="plan-details">
+                            <div class="cursor-plan">
+                                <h4>Cursor AI</h4>
+                                <p class="price">$20/월 (한화 약 27,000원)</p>
+                                <p>빠른 요청 500개, Max 모드 지원</p>
+                            </div>
+                            <div class="copilot-plan">
+                                <h4>GitHub Copilot</h4>
+                                <p class="price">$10/월 (한화 약 13,000원)</p>
+                                <p>Copilot Chat, 무제한 자동완성</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="plan-name">개인 Pro+</div>
+                        <div class="plan-details">
+                            <div class="cursor-plan">
+                                <h4>Cursor AI</h4>
+                                <p class="price">$60/월 (한화 약 81,000원)</p>
+                                <p>프리미엄 요청 확대, 여러 모델</p>
+                            </div>
+                            <div class="copilot-plan">
+                                <h4>GitHub Copilot</h4>
+                                <p class="price">$39/월 (한화 약 53,000원)</p>
+                                <p>모델 선택, 요청 확장</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="plan-name">Ultra (고급 개인)</div>
+                        <div class="plan-details">
+                            <div class="cursor-plan">
+                                <h4>Cursor AI</h4>
+                                <p class="price">$200/월 (한화 약 270,000원)</p>
+                                <p>GPT-4 장시간 연속 사용, 13,000개 요청</p>
+                            </div>
+                            <div class="copilot-plan">
+                                <h4>GitHub Copilot</h4>
+                                <p class="price">❌ 없음</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="plan-name">기업용</div>
+                        <div class="plan-details">
+                            <div class="cursor-plan">
+                                <h4>Cursor AI</h4>
+                                <p class="price">$40/월/사용자 (한화 약 54,000원)</p>
+                                <p>SSO, 팀 기능 포함</p>
+                            </div>
+                            <div class="copilot-plan">
+                                <h4>GitHub Copilot</h4>
+                                <p class="price">Business ($19), Enterprise ($39)/월/사용자</p>
+                                <p>한화 약 26,000원, 53,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 장단점 비교 -->
+            <section class="section">
+                <h2><i class="fas fa-balance-scale"></i> 장단점 비교</h2>
+                <div class="pros-cons-grid">
+                    <div class="pros-cons-card cursor">
+                        <h3><i class="fas fa-rocket"></i> Cursor AI 장점</h3>
+                        <ul>
+                            <li>전체 코드 수정 지원</li>
+                            <li>명령 기반 리팩토링(ex: "이 함수 정리해줘") 지원</li>
+                            <li>다양한 LLM(GPT-4o, Claude 등) 선택 가능</li>
+                            <li>Max 모드에서는 수천 줄의 코드도 한 번에 처리</li>
+                            <li>버튼 그룹을 통한 대화형 방식과, 상황에 따라 반응이 바뀌는 그룹 기반 인터페이스</li>
+                            <li>'바이브 코딩' 경험을 한층 강화</li>
+                            <li><strong>'ㄱㅎ 방식'</strong> - 기출시험과 같은 직관적인 문제 해결 방식</li>
+                        </ul>
+                    </div>
+                    <div class="pros-cons-card copilot">
+                        <h3><i class="fas fa-rocket"></i> GitHub Copilot 장점</h3>
+                        <ul>
+                            <li>VS Code, JetBrains 등 다양한 IDE에서 사용 가능</li>
+                            <li>직관 리팩토링 및 사용이 간편</li>
+                            <li>자동완성 품질 우수</li>
+                            <li>Microsoft 생태계와 연동 용이 (GitHub, Azure 등)</li>
+                        </ul>
+                    </div>
+                    <div class="pros-cons-card cursor">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Cursor AI 단점</h3>
+                        <ul>
+                            <li>별도 IDE 설치 필요 (기존 VS Code 아니면 복잡)</li>
+                            <li>학습 곡선 있음</li>
+                            <li>고급 기능은 고비용 요금제 필요</li>
+                        </ul>
+                    </div>
+                    <div class="pros-cons-card copilot">
+                        <h3><i class="fas fa-exclamation-triangle"></i> GitHub Copilot 단점</h3>
+                        <ul>
+                            <li>제한된 리팩토링 능력</li>
+                            <li>전체 파일 수준 작업 어려움</li>
+                            <li>일부 기능은 고급 요금제에서만 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 적합한 사용자 -->
+            <section class="section">
+                <h2><i class="fas fa-users"></i> 어떤 사람에게 적합한가?</h2>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <h3>AI와 페어 프로그래밍처럼 일하고 싶다</h3>
+                        <div class="recommendation">Cursor AI</div>
+                    </div>
+                    <div class="recommendation-card">
+                        <h3>파일 전체 리팩토링이나 코드 분석이 중요하다</h3>
+                        <div class="recommendation">Cursor AI</div>
+                    </div>
+                    <div class="recommendation-card">
+                        <h3>간단한 코드 자동완성과 문맥 추천 중심</h3>
+                        <div class="recommendation">GitHub Copilot</div>
+                    </div>
+                    <div class="recommendation-card">
+                        <h3>VS Code 등 기존 IDE에 통합해서 쓰고 싶다</h3>
+                        <div class="recommendation">GitHub Copilot</div>
+                    </div>
+                    <div class="recommendation-card">
+                        <h3>저렴하게 AI 자동완성만 쓰고 싶다</h3>
+                        <div class="recommendation">GitHub Copilot</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 결론 -->
+            <section class="section conclusion">
+                <h2><i class="fas fa-lightbulb"></i> 결론</h2>
+                <div class="conclusion-content">
+                    <div class="conclusion-card cursor">
+                        <h3>Cursor AI</h3>
+                        <p>AI와 함께 개발하는 IDE 전체 경험을 원할 때 적합. 개발자형 AI 프로툴을 원하면 유니티화된 것이 가장 편하고 강력함. '버튼형 대화'로 직관적인 AI 필드를 만들어 개발할 수 있는 <strong>'ㄱㅎ 방식'</strong>과 비슷한 바이브 코딩(vibe coding) 경험을 지원함.</p>
+                        <div class="gh-method-explanation">
+                            <h4><i class="fas fa-lightbulb"></i> ㄱㅎ 방식이란?</h4>
+                            <p>기출시험 문제를 푸는 것처럼, AI가 제시하는 여러 옵션 중에서 상황에 맞는 답을 선택하는 직관적인 개발 방식. 복잡한 코딩 문제도 단계별로 분해하여 체계적으로 해결할 수 있게 해주는 Cursor AI만의 특별한 경험.</p>
+                        </div>
+                    </div>
+                    <div class="conclusion-card copilot">
+                        <h3>GitHub Copilot</h3>
+                        <p>가볍고 빠르게 AI의 도움을 받는 자동완성 도구로 탁월하며, 익숙한 환경에서 바로 쓸 수 있고 가격도 저렴함</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 Cursor AI vs GitHub Copilot 비교 분석</p>
+                </div>
+                <div class="contact-info">
+                    <p>문의: 이동기 과장 | <a href="mailto:yidongky@to21.co.kr">yidongky@to21.co.kr</a> | T021</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
